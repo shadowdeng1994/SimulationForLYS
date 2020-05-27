@@ -8,7 +8,7 @@ library(parallel)
 fun.ThreeGateQuestion <- function(iii){
 	library(tidyverse)
 	cat(iii,sep="\n")
-	# Generate three gates and three prizes
+	# Generate three gates and one prize
 	data.frame("Gate"=1:3,"Prize"=sample(c(0,0,1))) %>% 
 	# Choose one gate by player
 	mutate(FstChoose=sample(c(0,0,1))) %>% 
